@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mediatr" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\DotNet.CQRS.Azure.Data.Tables\DotNet.CQRS.Azure.Data.Tables.csproj" />
+    <ProjectReference Include="..\..\src\DotNet.CQRS\DotNet.CQRS.csproj" />
+    <ProjectReference Include="..\DotNet.CQRS.Sample.Core\DotNet.CQRS.Sample.Core.csproj" />
+    <ProjectReference Include="..\DotNet.CQRS.Sample.Infrastructure.Azure.Data.Tables\DotNet.CQRS.Sample.Infrastructure.Azure.Data.Tables.csproj" />
+  </ItemGroup>
+
+</Project>
